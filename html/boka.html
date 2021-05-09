@@ -7,10 +7,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/boka.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
 
     <body>
         <div class="wrapper">
+
             <!--Navbar-->
             <header>
                 <nav>
@@ -18,96 +20,70 @@
                     <label for="check" class="checkbtn">
                         <i class="fas fa-bars"></i>
                     </label>
-                    <a href="../index.html"><img class="loga" src="../img/loga.png" alt="bild på loga" width="380px" height="75px"></a> 
+                    <div class="logo">
+                        <a href="../index.html"><h1>Schlättahotellet</h1></a>
+                        <a href="../index.html"><img src="../img/loga.png" alt="bild på loga" width="380px" height="75px"></a>
+                    </div> 
                     <ul>
-                        <li><a class="knapp" href="./boka.html">Boka</a></li>
+                        <li><a class="knapp" href="../html/boka.html">Boka</a></li>
                         <li><a href="../index.html">Hem</a></li>
-                        <li><a href="./hotell.html">Hotell</a></li>
-                        <li><a href="./resturang.html">Resturang</a></li>
-                        <li><a href="./vara-paket.html">Våra Paket</a></li>
-                        <li><a href="./bildgalleri.html">Bildgalleri</a></li>
+                        <li><a href="../html/hotell.html">Hotell</a></li>
+                        <li><a href="../html/resturang.html">Resturang</a></li>
+                        <li><a href="../html/vara-paket.html">Våra Paket</a></li>
+                        <li><a href="../html/bildgalleri.html">Bildgalleri</a></li>
                     </ul>
                 </nav>  
             </header>    
 
             <!--Main-->
             <main>
-                <div class="booking-contatiner">
-                    <div class="booking-contatiner-item">
-                        <h2 class="booking-heading">Öppet Tider</h2>
-                        <h3 class="booking-heading-days">Måndag - Fredag</h3>
-                        <p>07:00 - 11:00 (Frukost)</p>
-                        <p>11:00 - 22:00 (Lunch/middag)</p>
-
-                        <h3 class="booking-heading-days">Lördag och Söndag</h3>
-                        <p>09:00 - 13:00 (Frukost)</p>
-                        <p>13:00 - 23:00 (Lunch/middag)</p>
-                        
-                        <hr>
-
-                        <h4 class="booking-heading-phone">Ring oss: 0512-310 00</h4>
-                    </div>
-
-                    <div class="booking-contatiner-form">
-                        <form action="#">
-                            <h2 class="booking-heading">Boka Rum</h2>
-
-                            <div class="form-field">
-                                <p>Ditt namn</p>
-                                <input type="text" placeholder="Ditt namn">
+                <section class="booking">
+                    <div class="container">
+                        <form action="" class="form">
+                            <div class="input-group">
+                                <label for="destination" class="input-label">Namn</label>
+                                <input type="text" placeholder="Ditt namn" class="input" id="destination">
                             </div>
-
-                            <div class="form-field">
-                                <p>Din E-mail</p>
-                                <input type="email" placeholder="Din E-mail">
+                            <div class="input-group">
+                                <label for="check-in" class="input-label">Checka In</label>
+                                <input type="date" class="input" id="check-in"> 
                             </div>
-
-                            <div class="form-field">
-                                <p>Datum vid Incheckning</p>
-                                <input type="date" placeholder="Datum vid Incheckning">
+                            <div class="input-group">
+                                <label for="check-out" class="input-label">Checka Ut</label>
+                                <input type="date" class="input" id="check-out">
                             </div>
-
-                            <div class="form-field">
-                                <p>Datum vid utcheckning</p>
-                                <input type="date" placeholder="Datum vid utcheckning">
-                            </div>
-
-                            <div class="form-field">
-                                <p>Hur många rum</p>
-                                <input type="text" placeholder="Hur många rum">
-                                <select name="select" id="#">
-                                    <option value="1">1 rum</option>
-                                    <option value="2">2 rum</option>
-                                    <option value="3">3 rum</option>
-                                    <option value="4">4 rum</option>
-                                    <option value="5">5 rum</option>
+                            <div class="input-group">
+                                <label for="adults" class="input-label">Vuxna</label>
+                                <select class="options" id="adults">
+                                    <option value="0">0</option>
+                                    <option value="0">1</option>
+                                    <option value="0">2</option>
+                                    <option value="0">3</option>
+                                    <option value="0">4</option>
+                                    <option value="0">5</option>
+                                    <option value="0">6</option>
                                 </select>
                             </div>
-
-                            <div class="form-field">
-                                <p>Antal personer</p>
-                                <input type="text" placeholder="Antal Personer">
-                                <select name="select" id="#">
-                                    <option value="1">1 person</option>
-                                    <option value="2">2 personer</option>
-                                    <option value="3">3 personer</option>
-                                    <option value="4">4 personer</option>
-                                    <option value="5">5 personer</option>
-                                    <option value="6">6 personer</option>
-                                    <option value="7">7 personer</option>
-                                    <option value="8">8 personer</option>
-                                    <option value="9">9 personer</option>
-                                    <option value="10">10 personer</option>
-                                    <option value="11">11 personer</option>
-                                    <option value="12">12 personer</option>
+                            <div class="input-group">
+                                <label for="children" class="input-label">Barn</label>
+                                <select class="options" id="children">
+                                    <option value="0">0</option>
+                                    <option value="0">1</option>
+                                    <option value="0">2</option>
+                                    <option value="0">3</option>
+                                    <option value="0">4</option>
+                                    <option value="0">5</option>
+                                    <option value="0">6</option>
+                                    <option value="0">7</option>
+                                    <option value="0">8</option>
                                 </select>
                             </div>
-                            
-                            <button class="booking-btn">Sök</button>
+                            <button type="submit" class="btn form-btn btn-orange">Sök
+                                <span class="dots"><i class="fas fa-el"></i></span>
+                            </button>
                         </form>
-
                     </div>
-                </div>
+                </section>
             </main>
 
             <!--Footer-->
@@ -116,31 +92,34 @@
                     <div class="footers">
                         <div class="footer-heading footer-1">
                             <h2>Om Oss</h2>
-                            <a href="#">Om ...</a>
-                            <a href="#">Kontakta</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Användarvillkor</a>
+                            <p>Hotell Schlätta är ett nybyggt hotell sedan 2021 och vår främsta prioritering är att du som gäst ska känna dig trygg och får en bra upplevelse</p>
                         </div>
                         <div class="footer-heading footer-2">
-                            <h2>Kontakta Oss</h2>
-                            <a href="#">Om ...</a>
-                            <a href="#">Kontakta</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Användarvillkor</a>
-                        </div>
-                        <div class="footer-heading footer-3">
                             <h2>Sociala Medier</h2>
                             <a href="#">Twitter <i class="fab fa-twitter"></i></a>
                             <a href="#">Instagram <i class="fab fa-instagram"></i></a>
                             <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
                             <a href="#">Youtube <i class="fab fa-youtube"></i></a>
                         </div>
+                        <div class="footer-heading footer-3">
+                            <h2>Kontakta oss</h2>
+                            <a href="#">Allégatan 50 <i class="fas fa-map-marker-alt"></i></a>
+                            <a href="#">0512-310 00 <i class="fas fa-phone-alt"></i></a>
+                            <a href="#">vara.kommun@vara.se <i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
                 </div>
+                <p> &copy; 2020 - <span id="year">All rights reserved.</span></p>
             </footer>
         </div>    
-        <script src="" async defer></script>
+
+        <script type="text/javascript">
+            // Footer //
+            
+            // Get the current year and put it in a variable
+            var year = new Date().getFullYear().toString();
+            // Write the date into element with ID "year"
+            document.getElementById("year").innerHTML = year;
+        </script>
     </body>
 </html>

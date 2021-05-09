@@ -11,6 +11,7 @@
     </head>
     <body>
         <div class="wrapper">
+
             <!--Navbar-->
             <header>
                 <nav>
@@ -18,64 +19,60 @@
                     <label for="check" class="checkbtn">
                         <i class="fas fa-bars"></i>
                     </label>
-                    <a href="../index.html"><img class="loga" src="../img/loga.png" alt="bild på loga" width="380px" height="75px"></a> 
+                    <div class="logo">
+                        <a href="../index.html"><h1>Schlättahotellet</h1></a>
+                        <a href="../index.html"><img src="../img/loga.png" alt="bild på loga" width="380px" height="75px"></a>
+                    </div> 
                     <ul>
-                        <li><a class="knapp" href="./boka.html">Boka</a></li>
+                        <li><a class="knapp" href="../html/boka.html">Boka</a></li>
                         <li><a href="../index.html">Hem</a></li>
-                        <li><a href="./hotell.html">Hotell</a></li>
-                        <li><a href="./resturang.html">Resturang</a></li>
-                        <li><a href="./vara-paket.html">Våra Paket</a></li>
-                        <li><a href="./bildgalleri.html">Bildgalleri</a></li>
+                        <li><a href="../html/hotell.html">Hotell</a></li>
+                        <li><a href="../html/resturang.html">Resturang</a></li>
+                        <li><a href="../html/vara-paket.html">Våra Paket</a></li>
+                        <li><a href="../html/bildgalleri.html">Bildgalleri</a></li>
                     </ul>
                 </nav>  
             </header>    
 
             <!--Main-->
             <main>
-
+                
             </main>
+
             <!--Footer-->
             <footer>
                 <div class="footer-container">
                     <div class="footers">
                         <div class="footer-heading footer-1">
                             <h2>Om Oss</h2>
-                            <a href="#">Om ...</a>
-                            <a href="#">Kontakta</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Användarvillkor</a>
+                            <p>Hotell Schlätta är ett nybyggt hotell sedan 2021 och vår främsta prioritering är att du som gäst ska känna dig trygg och får en bra upplevelse</p>
                         </div>
                         <div class="footer-heading footer-2">
-                            <h2>Kontakta Oss</h2>
-                            <a href="#">Om ...</a>
-                            <a href="#">Kontakta</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Användarvillkor</a>
-                        </div>
-                        <div class="footer-heading footer-3">
                             <h2>Sociala Medier</h2>
                             <a href="#">Twitter <i class="fab fa-twitter"></i></a>
                             <a href="#">Instagram <i class="fab fa-instagram"></i></a>
                             <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
                             <a href="#">Youtube <i class="fab fa-youtube"></i></a>
                         </div>
+                        <div class="footer-heading footer-3">
+                            <h2>Kontakta oss</h2>
+                            <a href="#">Allégatan 50 <i class="fas fa-map-marker-alt"></i></a>
+                            <a href="#">0512-310 00 <i class="fas fa-phone-alt"></i></a>
+                            <a href="#">vara.kommun@vara.se <i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
                 </div>
+                <p> &copy; 2020 - <span id="year">All rights reserved.</span></p>
             </footer>
         </div>    
 
-        <script src="./js/script.js" async defer></script>
-        <script type ="text/javascript">
-            var counter = 1;
-            setInterval(function(){
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if(counter > 4){
-                    counter = 1;
-                }
-            }, 5000);
+        <script type="text/javascript">
+            // Footer //
+            
+            // Get the current year and put it in a variable
+            var year = new Date().getFullYear().toString();
+            // Write the date into element with ID "year"
+            document.getElementById("year").innerHTML = year;
         </script>
     </body>
 </html>
