@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hotell Schlätta</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--Navbar-->
+            <header>
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <a href="../index.html"><img class="loga" src="../img/loga.png" alt="bild på loga" width="380px" height="75px"></a> 
+                    <ul>
+                        <li><a class="knapp" href="./boka.html">Boka</a></li>
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="./hotell.html">Hotell</a></li>
+                        <li><a href="./resturang.html">Resturang</a></li>
+                        <li><a href="./vara-paket.html">Våra Paket</a></li>
+                        <li><a href="./bildgalleri.html">Bildgalleri</a></li>
+                    </ul>
+                </nav>  
+            </header>    
+
+            <!--Main-->
+            <main>
+
+            </main>
+            <!--Footer-->
+            <footer>
+                <div class="footer-container">
+                    <div class="footers">
+                        <div class="footer-heading footer-1">
+                            <h2>Om Oss</h2>
+                            <a href="#">Om ...</a>
+                            <a href="#">Kontakta</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Användarvillkor</a>
+                        </div>
+                        <div class="footer-heading footer-2">
+                            <h2>Kontakta Oss</h2>
+                            <a href="#">Om ...</a>
+                            <a href="#">Kontakta</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Användarvillkor</a>
+                        </div>
+                        <div class="footer-heading footer-3">
+                            <h2>Sociala Medier</h2>
+                            <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+                            <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+                            <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+                            <a href="#">Youtube <i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>    
+
+        <script src="./js/script.js" async defer></script>
+        <script type ="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+    </body>
+</html>

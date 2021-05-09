@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hotell Schlätta</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <!--Navbar-->
+            <header>
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="logo">
+                        <a href="../index.html"><h1>Schlättahotellet</h1></a>
+                        <a href="../index.html"><img class="loga" src="../img/loga.png" alt="bild på loga" width="380px" height="75px"></a>
+                    </div> 
+                    <ul>
+                        <li><a class="knapp" href="./html/boka.html">Boka</a></li>
+                        <li><a href="./index.html">Hem</a></li>
+                        <li><a href="./html/hotell.html">Hotell</a></li>
+                        <li><a href="./html/resturang.html">Resturang</a></li>
+                        <li><a href="./html/vara-paket.html">Våra Paket</a></li>
+                        <li><a href="./html/bildgalleri.html">Bildgalleri</a></li>
+                    </ul>
+                </nav>  
+            </header>    
+
+            <!--Main-->
+            <main>
+
+                <!--image slider-->
+                 <div class="slider">
+                     <div class="slides">
+
+                        <!--radio knappar-->         
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+ 
+                        <!--bilder-->
+                        <div class="slide first">
+                            <img src="./img/hotell.jpg" alt="bild på hotellet">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/reception.jpg" alt="bild på receptionen">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/matsal.jpg" alt="bild på matsal">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/sovrum.jpg" alt="bild på ett sovrum">
+                        </div>
+ 
+                        <!--automatisk navigering-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+
+                     <!--manuell navigering-->
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                     </div>
+
+                     <div class="card">
+                        <div class="card-img card-img1"></div>
+                        <div class="card-content">
+                            <h1>Mat & Dryck</h1>
+                            <h2>City of Big Shoulders</h2>
+                            <p>
+                            C
+                            </p>​
+                            <div class="card-footer">
+                                <a href="#" class="card-button">Läs mer</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="card-img card-img2"></div>
+                        <div class="card-content">
+                            <h1>Aktiviteter</h1>
+                            <h2>City of Big Shoulders</h2>
+                            <p>
+                            C
+                            </p>​
+                            <div class="card-footer">
+                                <a href="#" class="card-button">Läs mer</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="card">
+                        <div class="card-img card-img3"></div>
+                        <div class="card-content">
+                            <h1>Våra Paket</h1>
+                            <h2>City of Big Shoulders</h2>
+                            <p>
+                            C
+                            </p>​
+                            <div class="card-footer">
+                                <a href="./html/vara-paket.html" class="card-button">Läs mer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img card-img4"></div>
+                        <div class="card-content">
+                            <h1>Bildgalleri</h1>
+                            <h2>City of Big Shoulders</h2>
+                            <p>
+                            C
+                            </p>​
+                            <div class="card-footer">
+                                <a href="./html/bildgalleri.html" class="card-button">Läs mer</a>
+                            </div>
+                        </div>
+                    </div>
+             </main>
+
+            <!--Footer-->
+            <footer>
+                <div class="footer-container">
+                    <div class="footers">
+                        <div class="footer-heading footer-1">
+                            <h2>Om Oss</h2>
+                            <p>Hotell Schlätta</p>
+                        </div>
+                        <div class="footer-heading footer-2">
+                            <h2>Kontakta Oss</h2>
+                            <a href="#">Om </a>
+                            <a href="#">Kontakta</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Hitta hit</a>
+                        </div>
+                        <div class="footer-heading footer-3">
+                            <h2>Sociala Medier</h2>
+                            <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+                            <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+                            <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+                            <a href="#">Youtube <i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="footer-heading footer-4">
+                            <h2>Har du en fråga?</h2>
+                            <a href="#">Allégatan 50 <i class="fas fa-map-marker-alt"></i></a>
+                            <a href="#">0512-310 00 <i class="fas fa-phone-alt"></i></a>
+                            <a href="#">vara.kommun@vara.se <i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p> &copy; 2020 - <span id="year">All rights reserved.</span></p>
+            </footer>
+        </div>    
+
+        <script type ="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+    </body>
+</html>
