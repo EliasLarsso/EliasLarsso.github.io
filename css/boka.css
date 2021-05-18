@@ -8,6 +8,7 @@
 
 body{
     font-family: monospace;
+    overflow-x: hidden;
     
 }
 
@@ -230,7 +231,7 @@ footer > p{
         ul{
             position: fixed;
             width: 100%;
-            height: 100vh;
+            height: 400vh;
             background: #1B1818;
             top: 80px;
             left: -100%;
@@ -241,7 +242,7 @@ footer > p{
     
         nav ul li{
             display: block;
-            margin: 50px 0;
+            margin: 100px 0;
             line-height: 15px;
         }
     
