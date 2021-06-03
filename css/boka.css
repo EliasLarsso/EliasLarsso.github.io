@@ -91,7 +91,7 @@ nav ul li a{
 }
 
 a.knapp{
-    background: orange;
+    background-color: rgb(129, 84, 0);
 }
 
  li a:hover{
@@ -112,6 +112,7 @@ a.knapp{
 #check{
     display: none;
 }
+
 
 
 /* Main */

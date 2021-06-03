@@ -114,6 +114,12 @@ a.knapp{
 }
 
 
+/* Active */
+
+.active, li a:hover{
+    background-color: rgb(129, 84, 0);
+}
+
 
 /* Main */
 
@@ -365,6 +371,7 @@ footer > p{
 
     .checkbtn{
         display: block;
+        margin-left: 1rem;
     }
 
     ul{
@@ -394,9 +401,6 @@ footer > p{
         left: 0;
     }
 
-    .checkbtn{
-        margin-right: 0;
-    }
 
     .logo{
         display: block;
